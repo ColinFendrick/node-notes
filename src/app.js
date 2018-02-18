@@ -1,5 +1,9 @@
-const a = 1;
-const b = 2;
-const c = a + b;
+// function statement
+const greet = str => {
+	console.log(str);
+};
 
-console.log(c);
+const logGreeting = (fn, str) => {
+	fn(str);
+};
+logGreeting(greet, "hey dummy");

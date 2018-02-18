@@ -22,4 +22,8 @@ Node is a set of features available in C++ through the node module
 
 Javascript code involves `process.binding` to grab the C++ code and wrap it
 
-Node gets pointed at the javascript files tor un
+Node gets pointed at the javascript files to run
+
+First-class functions: functions work as variables in javascript
+
+Expression: block of code that results in a value
