@@ -1,9 +1,8 @@
 // function statement
-const greet = str => {
-	console.log(str);
-};
+const greet = name => console.log(`Hey ${name}`);
 
-const logGreeting = (fn, str) => {
-	fn(str);
-};
-logGreeting(greet, "hey dummy");
+// first-class function
+const logGreeting = (fn, str) => fn(str);
+
+// function expression
+const greetMe = logGreeting(greet, "Colin");
