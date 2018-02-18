@@ -1,1 +1,2 @@
 V8 is a javascript engine written in C++. It can bind javascript code to C++ functions to work Javascript code into a C++ function.
+This allows print, load, etc JS keyword functions to run in the console through C++.
