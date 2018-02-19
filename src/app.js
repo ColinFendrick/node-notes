@@ -1,8 +1,15 @@
-// function statement
-const greet = name => console.log(`Hey ${name}`);
+const greet = require("./greet");
 
-// first-class function
-const logGreeting = (fn, str) => fn(str);
+greet();
 
-// function expression
-const greetMe = logGreeting(greet, "Colin");
+const person = {
+	name: {
+		first: "John",
+		last: "Doe"
+	},
+	greet: () => {
+		console.log(`Hello, ${person.name.first} ${person.name.last}`);
+	}
+};
+
+person.greet();
