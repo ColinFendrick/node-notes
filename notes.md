@@ -27,3 +27,7 @@ Node gets pointed at the javascript files to run
 First-class functions: functions work as variables in javascript
 
 Expression: block of code that results in a value
+
+Inheritance is when objects get access to the properties and methods of another through proto object.
+
+Function constructors are functions that are used to construct object via the `new` keyword and the 'this' keyword.
