@@ -1,4 +1,4 @@
-// const greet = require("./greet");
+const greet = require("./greet");
 
 // greet();
 
@@ -14,14 +14,40 @@
 
 // person.greet();
 
-function Person(firstname, lastname) {
-	this.firstname = firstname;
-	this.lastname = lastname;
-}
+// function Person(firstname, lastname) {
+// 	this.firstname = firstname;
+// 	this.lastname = lastname;
+// }
 
-Person.prototype.greet = function() {
-	console.log(`Hello, ${this.firstname} ${this.lastname}`);
+// Person.prototype.greet = function() {
+
+// 	console.log(`Hello, ${this.firstname} ${this.lastname}`);
+// };
+
+// const john = new Person("John", "Doe");
+// john.greet();
+
+//by value
+const change = b => {
+	b = 2;
 };
 
-const john = new Person("John", "Doe");
-john.greet();
+const a = 1;
+change(a);
+console.log(a);
+
+//by reference
+function changeObj(d) {
+	d.prop1 = () => {};
+	d.prop2 = {};
+}
+
+const c = {};
+c.prop1 = {};
+changeObj(c);
+console.log(c);
+
+//immediately invoked function expression
+(function (params) {
+	console.log("this is how we used to fake modules", params);
+}("params"));

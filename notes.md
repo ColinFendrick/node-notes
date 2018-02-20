@@ -31,3 +31,14 @@ Expression: block of code that results in a value
 Inheritance is when objects get access to the properties and methods of another through proto object.
 
 Function constructors are functions that are used to construct object via the `new` keyword and the 'this' keyword.
+
+Passing primitives to a function or whatever points to a specific spot in memory. The new variable points to a different location in memory. By value.
+
+By memory passing: when an object is passed to a function, the new variable points to the same location in memory.
+
+NodeJS  takes advantage of passing by reference to alter properties of objects
+
+Immediately invoked function expressions were used to fake modules before modules existed
+
+module.js is used to compile our code on loading a module with the require keyword
+It wraps our code in a function then sends it as a string to v8
