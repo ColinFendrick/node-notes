@@ -41,4 +41,10 @@ NodeJS  takes advantage of passing by reference to alter properties of objects
 Immediately invoked function expressions were used to fake modules before modules existed
 
 module.js is used to compile our code on loading a module with the require keyword
-It wraps our code in a function then sends it as a string to v8
+It wraps our code in a function then sends it as a string to v8.
+
+Module.exports is what the require function returns.
+
+Since the code is wrapped in a function that is given these things as function parameters this works through node.
+
+
