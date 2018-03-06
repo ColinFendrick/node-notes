@@ -1,1 +1,0 @@
-var greet = require("./greet");

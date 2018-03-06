@@ -20,3 +20,5 @@ grtr.greet();
 
 var greet5 = require("./greet5").greet;
 greet5();
+
+var greet = require("./greet");
