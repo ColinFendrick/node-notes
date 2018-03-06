@@ -1,15 +1,10 @@
-var Emitter = require("events");
+var person = {
+	firstname: "",
+	lastname: "",
+	greet: function() {
+		`Hello ${this.firstname} ${this.lastname}`;
+	}
+};
 
-var emtr = new Emitter();
-
-// Creating listeners
-emtr.on("greet", function () {
-	console.log("Someone said hello");
-});
-
-emtr.on("greet", function () {
-	console.log("A greeting occcured!");
-});
-
-// Emitting the event "greet"
-emtr.emit("greet");
+var john = Object.create(person);
+john.firstname = "John";
