@@ -47,6 +47,8 @@ Module.exports is what the require function returns.
 
 Since the code is wrapped in a function that is given these things as function parameters this works through node.
 
+`Exports` and `module.exports` both point to the same memory...
+...but when we set `exports` equal to a different value, it now points to different memory
 
-
+Require returns `module.exports` though. So we should mutate the object rather than replace the object.
 
